@@ -1,0 +1,34 @@
+﻿<Window x:Class="ReadJsonTaskWithSemaphore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadJsonTaskWithSemaphore" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <ListBox Width="700">
+                
+            </ListBox>
+        </Grid>
+        <Grid Grid.Row="1">
+
+            <WrapPanel>
+                <RadioButton Content="Single"  Margin="20,10,0,0"  FontSize="20" ></RadioButton>
+                <RadioButton Margin="20,10,0,0"  FontSize="20" Content="Multi" ></RadioButton>
+
+                <Label Margin="70,10,0,0" Content="Time: " FontSize="20" ></Label>
+                <Label Margin="30,10,0,0" FontSize="20" ></Label>
+
+                <Button Margin="100,10,0,0" Content="Cancel" FontSize="20" Width="120" Height="50"></Button>
+                <Button Command="{Binding StartButtonClick}" Margin="45,10,0,0" Content="Start" FontSize="20" Width="120" Height="50"></Button>
+            </WrapPanel>
+            
+        </Grid>
+    </Grid>
+</Window>
