@@ -12,7 +12,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <ListBox Width="700">
+            <ListBox Width="700" Name="listbox">
                 
             </ListBox>
         </Grid>
